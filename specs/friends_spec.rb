@@ -90,6 +90,7 @@ class TestFriends < MiniTest::Test
   # (hint: This function should not return anything. After the function call, check for the length of the friends array to test it!)
   def test_add_friend
     result = add_friend(@person2, "Scrappy-Doo")
+    # assert_equal(2, @person2[:friends].size())
     assert_equal(true, result)
   end
 
@@ -97,6 +98,7 @@ class TestFriends < MiniTest::Test
   # (hint: Same as above, testing for the length of the array should be sufficient)
   def test_remove_friend
     result = remove_friend(@person3, "Shaggy")
+    # assert_equal(0, @person2[:friends].size())
     assert_equal(true, result)
   end
 

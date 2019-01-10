@@ -7,6 +7,7 @@ def fav_show(person)
 end
 
 def likes_to_eat(person, food)
+  # return person[:favourites][:snacks].include?(food)
   for snacks in person[:favourites][:snacks]
     return true if snacks == food
   end
@@ -53,7 +54,7 @@ def no_friends(people)
   friendless = []
   for person in people
     if person[:friends].empty?
-      friendless.push(person[:name])
+      friendless.push(person)
     end
   end
   return friendless
